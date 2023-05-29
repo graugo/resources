@@ -1,0 +1,96 @@
+Tooling .Net
+- Uso de VS
+    - creacion de proyecto
+    - gestor de nugets
+    - paneles
+    - ejecucion
+    - debug
+    - visor de recursos mientras hacemos el debug
+    - Git
+    - Otras funcionalidades
+- Csproj
+    - es el archivo que utiliza MSBuild para compilar nuestra aplicacion, en el caso de VB seria vbproj y en el caso de un proyecto de BD seria dbproj.
+    - el formato del archivo es XML y contiene toda la informacion e instrucciones para compilar el proyecto.
+    - en el caso de no querer utilizar el csproj generado por VS podriamos crear uno propio. En nuestro caso esto ocurre pocas veces, como mucho modificamos su contenido.
+    - [imagen](https://docs.microsoft.com/es-es/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file/_static/image2.png)
+    - Project es la raiz del archivo, este puede incluir atributos que indiquen los puntos de entrade del proceso de compilacion.
+    - dentro del tag propertygroup podemos definir valores para nuestra aplicacion desde cadenas de conexion hasta contraseñas.
+    - se pueden sobre escribir estos parametros desde linea de comando si es necesario.
+    - dentro de las propiedades se puede poner una condicion, si esta se cumple se dara el valor deseado.
+    - si se ha sobrescrito el valor desde linea de comandos la condicion se ignorara.
+    - los itemgroups incluyen los archivos y otros elementos necesario para realizar la compilacion.
+    - https://docs.microsoft.com/es-es/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file
+- sln
+    - revisar el archivo de una solucion
+- MSBuild
+    - https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild?view=vs-2022
+    - el proceso de compilacion consiste en un inicio, evaluacion y ejecucion.
+        - Inicio
+            - Se puede invocar desde VS o desde comando.
+            - primero se registran todos los datos que entren por linea de comando y se establecen como variables globales y estos invalidan los que se encuentra en los archivos de propiedades aunque mas adelante se consuman.
+            - uno de los primeros pasos que hace MSBuild es leer el sln para conocer los proyectos que debe tener en cuenta para la compilacion.
+            - lo que este definido en los archivos de proyecto no afecta en este paso.
+            - si ejecutamos MSBuild desde VS no hace los mismo que cuando se ejecuta desde linea de comandos.
+            - Msbuild llama a todas las referencias necesarias en el momento de la compilacion, mientras que desde VS se llama a estas referencias cuando son necesarias y se puede ir haciendo de manera simultanea.
+            - desde VS el archivo sln nuca llega a MSbuild lo que implica que los pasos de compilacion de sln no se ejecutan.
+        - Evaluacion
+            - en este paso se procesan y analizan los archivos para generar objetos en memoria que determinara que se compila.
+            - este paso consta de 6 pasos que son los que generan estas estructuras que se utilizaran durante el paso de ejecuccion
+                - Evaluar variables de entorno
+                    - las variables de entorno se usan para establecer propiedades equivalentes.
+                    - la variable PATH es un buen ejemplo de una de estas variables de entorno.
+                - Evaluar importaciones y propiedades
+                    - Se genera un archivo xml en memoria con los archivos de proyecto y sus importaciones.
+                    - el procesado es secuencial, lo que quiere decir que solo se podra acceder a las variables ya cargadas.
+                    - como las propiedades se cargan antes que los elementos no se puede obtener el valos de ninguno de ellos.
+                - Evaluar definiciones de elementos
+                    - se interpretan las definiciones de elementos y se reprensentan en memoria.
+                - Evaluar elementos
+                    - se cargan los elementos fuera de cualquier destino.
+                    - la carga es secuencial lo que impide carga elementos futuros.
+                    - los elementos pueden acceder a propiedades porque ya estan cargadas incluso si estan definidas mas adelante.
+                - Evaluar elementos usingTask
+                    - se cargan las tareas declaradas para utilizarlas en el paso de ejecucion.
+                - Evaluar destinos
+                    - se generarn las estructura de destino en memoria, para preparar la ejecucion.
+                    - no se ejecuta nada real.
+        - Ejecucion
+            - se ordenan los destinos y se ejecutan.
+            - las tareas tambien se ejecutan.
+            - se evaluan las propiedades y elementos en el orden que aparecen dentro de cada uno de los destinos conjuntamente.
+            - los cambios en las propiedades y en los elementos dentro de un destino se pueden observar despues del destino donde cambiaron.
+            - en un solo proyecto la ejecucion de los destinos es en serie.
+            - el orden de ejecucion viene dado por los atributos beforetargets, dependsontargets y aftertargets.
+            - el orden puede alterarse si un destino modifica uno de estos atributos.
+            - el proceso se ejecuta en una estructura de pila que contiene los destinos a compilar.
+            - se ejecutan los destinos, si este depende de alguno pasa a la parte superior de la pila.
+            - si el destino no tiene dependencias se ejecuta completamente.
+            - hay 2 rutas de codigo en Msbuild, la normal y grafo.
+            - en la normal los proyectos especifican sus dependencias en los elementos ProjectReference. Cuando se inicia la compilacion de un proyecto en la pila, ResolveProjectReferences invoca una tarea de MSbuild que accede alos elementos de PR para obtenerlos. estos se transforman en elementos locales. se pausa la ejecucion local y se lanza la del proyecto referenciado. solo se reanuda la compilacion del principal despues de compilar el dependiente. VS genera las dependencias en sln y solo se representan al compilar una solucion. si se compila 1 solo proyecto se omiten las dependencias.
+            - si especificamos la opcion grafo, se generara un grafo de las dependencias  y se recorrera para determinar el orden de compilacion, al igual que en el anterior los proyectos a los que se hace referencia cargan primero.
+            - se puede establecer la compilacion en paralelo para utilizar los nucleos de CPU disponibles.-
+- Nuget
+    - https://docs.microsoft.com/en-us/nuget/what-is-nuget
+    - [image](https://docs.microsoft.com/en-us/nuget/media/nuget-roles.png)
+    - NuGet provides the central nuget.org repository with support for private hosting.
+    - NuGet provides the tools developers need for creating, publishing, and consuming packages.
+    - Most importantly, NuGet maintains a reference list of packages used in a project and the ability to restore and update those packages from that list.
+- CLR
+    - https://docs.microsoft.com/en-us/dotnet/standard/clr
+    - Se encarga de toda la gestion en runtime de vida del codigo y permite que codigo en diferentes lenguajes conviva.
+    - Mejoras en el rendimiento.
+    - Capacidad para utilizar fácilmente componentes desarrollados en otros lenguajes.
+    - Tipos extensibles que proporciona una biblioteca de clases
+    - Características del lenguaje como herencia, interfaces y sobrecarga para la programación orientada a objetos.
+    - Compatibilidad con subprocesamiento libre explícito que permite la creación de aplicaciones multiproceso escalables.
+    - Compatibilidad con el control de excepciones estructurado.
+    - Compatibilidad con atributos personalizados.
+    - Recolección de elementos no utilizados.
+    - Emplee delegados en lugar de punteros a funciones para mayor seguridad y protección de tipos.
+- Garbage Collector
+    - https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals
+    - nos permite no tener que pensar en liberar la memoria de manera manual.
+    - asigna los objetos de manera eficiente.
+    - recoje los objetos no utilizados, los borra de memoria y mantiene la memoria para nuevas asignaciones. Los objetos adminsitrados obtiene contenido limpio desde el principio de modo que no tiene que inicializar todos sus campos de datos.
+    - da la seguridad de que un objeto solo utilizara la memoria que se le asigna.
+    

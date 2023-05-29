@@ -1,0 +1,32 @@
+Architecture fundamentals
+- Domain Driven Design and N-Layered Architecture
+    - https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/ddd-oriented-microservice
+    - https://dotnet.microsoft.com/en-us/download/e-book/microservices-architecture/pdf
+    - https://docs.microsoft.com/es-es/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/media/ddd-oriented-microservice/domain-driven-design-microservice.png
+    - https://docs.microsoft.com/es-es/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/media/ddd-oriented-microservice/ddd-service-layer-dependencies.png
+    - La principal idea de este diseño es que el dominio, Negocio, tenga todo el peso dentro de la aplicacion.
+    - Para ello definimos la aplicación en diferentes capa, Layers, que nos permitiran tenerlo todo separado y organizado.
+    - La primera capa que podriamos representar seria la de servicios distribuidos, presentacion o aplicacion. En esta capa encontraremos cualquier tipo de proyecto que nos
+    de la posibilidad de comunicar hacia fuera. API, WCF, WebUI, SPA. Esta capa sera desde donde recibiremos las peticiones.
+        - Esta capa contendra los modelos de las request y response
+        - controllers y sus contratos
+        - mapeos para la capa de dominio
+        - acceso a las implementaciones de Infra, para poder realizar el DI
+    - La segunda capa, que es donde estara toda la logica, es la de dominio o negocio. Esta capa no tiene que tener ninguna dependencia con las otras. En esta capa realizaremos todo el desarrollo de negocio que necesitemos, es decir que es donde tendremos el trabajo real de nuestra aplicación.
+        - Esta capa contiene los contratos de la infrastructura
+        - Modelos POCO
+        - Entidades de Dominio, Rich object.
+        - Y todas las implementaciones y interfaces necesarias de nuestro negocio.
+    - La última capa se compone de la infrastructura, aqui encontraremos todo lo relacionado con obtencion de datos externos. BD, llamadas a otras apis, acceso a ficheros, acceso a caches, conexiones con colas, etc. Su intencion es que el negocio no dependa de donde obtenemos los datos, en caso de realizar un cambio de SQL server a archivos JSON al codigo de negocio no tiene que afectarle.
+        - Esta capa contiene las implementaciones de infrastructura.
+        - mapeos de las entidades.
+- Microservices Architecure
+    - En microServicios se puede utilizar DDD, pero el concepto de microservicio es diferente.
+    - https://microservices.io
+    - Se basa en hacer pequeñas aplicaciones que no esten demasiado acopladas, pero que puedan colaborar.
+    - Que ganamos, mantebilidad de los servicios y testeabilidad.
+    - Servicios poco acoplados, nos permite que los equipos puedan trabajar de manera mas independiente y sin impactar en otros en equipos con sus cambios.
+    - Te da la libertad de poder hacer despliegues independientes.
+    - La posiblidad de que pueda ser desarrollado por equipos pequeños.
+- Vertical slicing
+    - Documentacion?

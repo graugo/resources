@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ15.Tournament.WebApi", "EJ15.Tournament.WebApi\EJ15.Tournament.WebApi.csproj", "{3DE1FC91-3BB6-46AB-B27D-725D390BA957}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Presentation", "01.Presentation", "{FDACCC51-A980-4206-99F1-ACDBBEB73B2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Domain", "02.Domain", "{EEFC4143-B9BE-4E1A-90D6-AF2697450B40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Infrastructure", "03.Infrastructure", "{B09CCF64-2159-4B79-9520-C25467D1E1D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Test", "04.Test", "{B557E123-E6E7-4C05-8505-01CC802C6571}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ15.Tournament.Library", "EJ15.Tournament.Library\EJ15.Tournament.Library.csproj", "{6F376CCB-353F-45B9-A56E-D216F8D4CADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ15.Tournament.ServiceLibrary.Contracts", "EJ15.Tournament.ServiceLibrary.Contracts\EJ15.Tournament.ServiceLibrary.Contracts.csproj", "{5C0D8D76-10E1-47BE-B04C-657E93A74CA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ15.Tournament.ServiceLibrary.Impl", "EJ15.Tournament.ServiceLibrary.Impl\EJ15.Tournament.ServiceLibrary.Impl.csproj", "{55311000-7B9D-4EEC-8927-FAE4F7BC444D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ15.Tournament.Infrastructure.Contracts", "EJ15.Tournament.Infrastructure.Contracts\EJ15.Tournament.Infrastructure.Contracts.csproj", "{DDA80ADD-5206-47C4-8B1D-826603C63608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ15.Tournament.Infrastructure.Impl", "EJ15.Tournament.Infrastructure.Impl\EJ15.Tournament.Infrastructure.Impl.csproj", "{84BD1E9C-304F-43C8-9961-664F3ED1A417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ15.Tournament.ServiceLibrary.Impl.UnitTest", "EJ15.Tournament.ServiceLibrary.Impl.UnitTest\EJ15.Tournament.ServiceLibrary.Impl.UnitTest.csproj", "{FFD96050-76F0-460C-B4D5-0225E24D830E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DE1FC91-3BB6-46AB-B27D-725D390BA957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE1FC91-3BB6-46AB-B27D-725D390BA957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DE1FC91-3BB6-46AB-B27D-725D390BA957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DE1FC91-3BB6-46AB-B27D-725D390BA957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F376CCB-353F-45B9-A56E-D216F8D4CADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F376CCB-353F-45B9-A56E-D216F8D4CADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F376CCB-353F-45B9-A56E-D216F8D4CADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F376CCB-353F-45B9-A56E-D216F8D4CADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C0D8D76-10E1-47BE-B04C-657E93A74CA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0D8D76-10E1-47BE-B04C-657E93A74CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0D8D76-10E1-47BE-B04C-657E93A74CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0D8D76-10E1-47BE-B04C-657E93A74CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55311000-7B9D-4EEC-8927-FAE4F7BC444D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55311000-7B9D-4EEC-8927-FAE4F7BC444D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55311000-7B9D-4EEC-8927-FAE4F7BC444D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55311000-7B9D-4EEC-8927-FAE4F7BC444D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDA80ADD-5206-47C4-8B1D-826603C63608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDA80ADD-5206-47C4-8B1D-826603C63608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDA80ADD-5206-47C4-8B1D-826603C63608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDA80ADD-5206-47C4-8B1D-826603C63608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84BD1E9C-304F-43C8-9961-664F3ED1A417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84BD1E9C-304F-43C8-9961-664F3ED1A417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84BD1E9C-304F-43C8-9961-664F3ED1A417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84BD1E9C-304F-43C8-9961-664F3ED1A417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD96050-76F0-460C-B4D5-0225E24D830E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD96050-76F0-460C-B4D5-0225E24D830E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD96050-76F0-460C-B4D5-0225E24D830E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD96050-76F0-460C-B4D5-0225E24D830E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3DE1FC91-3BB6-46AB-B27D-725D390BA957} = {FDACCC51-A980-4206-99F1-ACDBBEB73B2B}
+		{6F376CCB-353F-45B9-A56E-D216F8D4CADF} = {EEFC4143-B9BE-4E1A-90D6-AF2697450B40}
+		{5C0D8D76-10E1-47BE-B04C-657E93A74CA0} = {EEFC4143-B9BE-4E1A-90D6-AF2697450B40}
+		{55311000-7B9D-4EEC-8927-FAE4F7BC444D} = {EEFC4143-B9BE-4E1A-90D6-AF2697450B40}
+		{DDA80ADD-5206-47C4-8B1D-826603C63608} = {EEFC4143-B9BE-4E1A-90D6-AF2697450B40}
+		{84BD1E9C-304F-43C8-9961-664F3ED1A417} = {B09CCF64-2159-4B79-9520-C25467D1E1D3}
+		{FFD96050-76F0-460C-B4D5-0225E24D830E} = {B557E123-E6E7-4C05-8505-01CC802C6571}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EAF19AD-5C75-4A61-A8A8-7064936B6BD3}
+	EndGlobalSection
+EndGlobal

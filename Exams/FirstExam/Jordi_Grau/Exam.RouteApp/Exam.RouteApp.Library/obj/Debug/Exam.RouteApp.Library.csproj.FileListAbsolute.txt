@@ -1,0 +1,12 @@
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Library\bin\Debug\Exam.RouteApp.Library.dll
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Library\bin\Debug\Exam.RouteApp.Library.pdb
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Library\obj\Debug\Exam.RouteApp.Library.csproj.AssemblyReference.cache
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Library\obj\Debug\Exam.RouteApp.Library.csproj.CoreCompileInputs.cache
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Library\obj\Debug\Exam.RouteApp.Library.dll
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Library\obj\Debug\Exam.RouteApp.Library.pdb
+C:\Users\Jordi\source\repos\Exams\FirstExam\Jordi_Grau\Exam.RouteApp\Exam.RouteApp.Library\bin\Debug\Exam.RouteApp.Library.dll
+C:\Users\Jordi\source\repos\Exams\FirstExam\Jordi_Grau\Exam.RouteApp\Exam.RouteApp.Library\bin\Debug\Exam.RouteApp.Library.pdb
+C:\Users\Jordi\source\repos\Exams\FirstExam\Jordi_Grau\Exam.RouteApp\Exam.RouteApp.Library\obj\Debug\Exam.RouteApp.Library.csproj.AssemblyReference.cache
+C:\Users\Jordi\source\repos\Exams\FirstExam\Jordi_Grau\Exam.RouteApp\Exam.RouteApp.Library\obj\Debug\Exam.RouteApp.Library.csproj.CoreCompileInputs.cache
+C:\Users\Jordi\source\repos\Exams\FirstExam\Jordi_Grau\Exam.RouteApp\Exam.RouteApp.Library\obj\Debug\Exam.RouteApp.Library.dll
+C:\Users\Jordi\source\repos\Exams\FirstExam\Jordi_Grau\Exam.RouteApp\Exam.RouteApp.Library\obj\Debug\Exam.RouteApp.Library.pdb

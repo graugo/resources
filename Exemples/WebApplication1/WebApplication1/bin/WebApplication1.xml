@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication1</name>
+    </assembly>
+    <members>
+        <member name="T:WebApplication1.Controllers.PrimerController">
+            <summary>
+            Primer Controller
+            </summary>
+        </member>
+        <member name="M:WebApplication1.Controllers.PrimerController.Get">
+            <summary>
+            Get()
+                Basic method
+            </summary>
+            <returns>
+            Returns string "Hello World"
+            </returns>
+        </member>
+        <member name="M:WebApplication1.Controllers.PrimerController.Get(System.String)">
+            <summary>
+            Get(name)
+                Basic Method
+            </summary>
+            <param name="name">Name of the user</param>
+            <returns>Returns string with user input</returns>
+        </member>
+    </members>
+</doc>

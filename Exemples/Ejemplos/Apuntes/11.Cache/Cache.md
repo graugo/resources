@@ -1,0 +1,15 @@
+Cache
+- MemoryCache
+    - https://docs.microsoft.com/en-us/dotnet/api/system.runtime.caching.memorycache?view=netframework-4.7.2
+    - La cache de memoria la utilizamos en los casos en los que no queremos hacer un llamado de nuevo a un recurso externo
+    - Esto nos permite acceder a la informacion de manera rapida
+    - Este tipo de cache consume memoria de aplicacion, lo que puede incrementar el uso que hacemos de esta
+    - Ya que consume memoria hemos de estudiar bien cuando utilizarla
+    - Podemos asignar un tiempo de vida para esta cache
+    - Los objetos de cache no pueden almacenar datos nulos
+    - Podemos establecer un limite de cuanta cache queremos ocupar cuando hacemos el set
+- Redis
+    - https://docs.redis.com/latest/rs/references/client_references/client_csharp/
+    - Descargar imagen de redis para docker para simular el servidor, docker pull redis
+    - iniciar contenedor, docker run -m 1GB --cpus 1 -p 6379:6379 redis
+    - Instalar nuget StackExchange.Redis

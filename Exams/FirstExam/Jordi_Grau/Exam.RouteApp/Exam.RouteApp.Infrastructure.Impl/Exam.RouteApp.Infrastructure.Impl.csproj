@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B309F89-CA6F-4EEC-8E00-3D55E270C62A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Exam.RouteApp.Infrastructure.Impl</RootNamespace>
+    <AssemblyName>Exam.RouteApp.Infrastructure.Impl</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\IRepoCache.cs" />
+    <Compile Include="Cache\RepoCache.cs" />
+    <Compile Include="Caller\ApiCaller.cs" />
+    <Compile Include="Caller\IApiCaller.cs" />
+    <Compile Include="Config\IRepoConfig.cs" />
+    <Compile Include="Config\RepoConfig.cs" />
+    <Compile Include="Implementations\RouteRepository.cs" />
+    <Compile Include="Mapper\IRepoMapper.cs" />
+    <Compile Include="Mapper\RepoMapper.cs" />
+    <Compile Include="Models\BasePriceDTO.cs" />
+    <Compile Include="Models\InfluenceDTO.cs" />
+    <Compile Include="Models\PlanetDTO.cs" />
+    <Compile Include="Models\PriceDTO.cs" />
+    <Compile Include="Models\PseudoDistanceDTO.cs" />
+    <Compile Include="Models\TaxesDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Exam.RouteApp.Infrastructure.Contracts\Exam.RouteApp.Infrastructure.Contracts.csproj">
+      <Project>{08668b2c-c0d3-47ad-81f0-7aea14eba269}</Project>
+      <Name>Exam.RouteApp.Infrastructure.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exam.RouteApp.Library\Exam.RouteApp.Library.csproj">
+      <Project>{efe4827f-53c0-45ab-b0e9-a2aebbfdcdc4}</Project>
+      <Name>Exam.RouteApp.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exam.RouteApp.ServiceLibrary.Contracts\Exam.RouteApp.ServiceLibrary.Contracts.csproj">
+      <Project>{6f43a8ff-46b1-44c6-87d7-7ad929d3946b}</Project>
+      <Name>Exam.RouteApp.ServiceLibrary.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exam.RouteApp.ServiceLibrary.Impl\Exam.RouteApp.ServiceLibrary.Impl.csproj">
+      <Project>{a49ee459-ef5f-4fda-bda1-cf9a44074ded}</Project>
+      <Name>Exam.RouteApp.ServiceLibrary.Impl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

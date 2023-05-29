@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03AA2B8E-8AF7-4C24-BC7B-AF4CB3937AE9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HiveApp</RootNamespace>
+    <AssemblyName>HiveApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HiveApp.Infrastructure.Contracts\HiveApp.Infrastructure.Contracts.csproj">
+      <Project>{ff986f2a-1c1d-4494-9ce0-828eb29b0377}</Project>
+      <Name>HiveApp.Infrastructure.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HiveApp.Infrastructure.Impl\HiveApp.Infrastructure.Impl.csproj">
+      <Project>{27158865-0e93-484a-8ce8-58205674a704}</Project>
+      <Name>HiveApp.Infrastructure.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HiveApp.Library\HiveApp.Library.csproj">
+      <Project>{B5E7C9FA-8C30-429B-98CC-7AF33A5BF8F9}</Project>
+      <Name>HiveApp.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HiveApp.ServiceLibrary.Contracts\HiveApp.ServiceLibrary.Contracts.csproj">
+      <Project>{994e3a05-d2f8-47aa-be74-45c955841a5e}</Project>
+      <Name>HiveApp.ServiceLibrary.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HiveApp.ServiceLibrary.Impl\HiveApp.ServiceLibrary.Impl.csproj">
+      <Project>{45cb3140-7ab7-41e6-8568-82d4b6c4cda5}</Project>
+      <Name>HiveApp.ServiceLibrary.Impl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

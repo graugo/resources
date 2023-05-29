@@ -1,0 +1,42 @@
+Databases
+- SQL Server
+    - Sistema de gestion de base de datos relacional desarrollado por microsoft
+    - El lenguaje para comunicarnos con la BD es Transact-SQL, es parecido a SQL
+- SQL server Express
+    - en un principio al instalar sql server se añade una parte del express
+    - para acceder al server tenemos que abrir el Management Studio y escribir un . en la opcion de server
+    - establecer la autenticacion como windows y darle a intro
+    - desde ese punto ya podemos trabajar
+    - Create Database
+        - https://docs.microsoft.com/en-us/sql/t-sql/statements/create-database-transact-sql?view=sql-server-ver16&tabs=sqlpool
+        - CREATE DATABASE MyDataBase GO
+    - Create Table
+        - https://docs.microsoft.com/en-us/sql/t-sql/statements/create-table-transact-sql?view=sql-server-ver16
+        - USE MyDataBase GO CREATE TABLE MyTable (Id INT NOT NULL PRIMARY KEY IDENTITY(0, 1), Name VARCHAR(25), Age INT) GO
+    - Select
+        - https://docs.microsoft.com/en-us/sql/t-sql/queries/select-examples-transact-sql?view=sql-server-ver16
+        - https://docs.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-ver16
+        - USE MyDataBase GO SELECT * FROM MyDataBase GO
+    - Insert
+        - https://docs.microsoft.com/en-us/sql/t-sql/statements/insert-transact-sql?view=sql-server-ver16
+        - USE MyDataBase GO INSERT INTO [MyTable](Name, Age) Values ('adrian', 30) GO
+    - Update
+        - https://docs.microsoft.com/en-us/sql/t-sql/queries/update-transact-sql?view=sql-server-ver16
+        - USE MyDataBase GO UPDATE MyDataBase SET Name = 'potato' WHERE ID = 0 GO
+    - DELETE
+        - https://docs.microsoft.com/en-us/sql/t-sql/statements/delete-transact-sql?view=sql-server-ver16
+        - USE MyDataBase GO DELETE FROM MyDataBase WHERE ID = 0 GO
+    - DROP
+        - https://docs.microsoft.com/en-us/sql/t-sql/statements/drop-database-transact-sql?view=sql-server-ver16
+        - USE MyDataBase GO DROP TABLE MyTable GO
+        - DROP DATABASE MyDataBase
+- ADO.NET
+    - https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/
+    - Utilizaremos SqlClient
+    - https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-code-examples
+    - realizar ejemplo de select, insert, update y delete
+- EF
+    - Code First
+        - https://docs.microsoft.com/en-us/ef/ef6/modeling/code-first/workflows/new-database
+    - DataBase First
+        - https://docs.microsoft.com/en-us/ef/ef6/modeling/designer/workflows/database-first

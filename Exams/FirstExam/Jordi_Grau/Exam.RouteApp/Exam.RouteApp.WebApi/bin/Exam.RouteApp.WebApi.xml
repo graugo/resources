@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Exam.RouteApp.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Exam.RouteApp.WebApi.Controllers.RouteController">
+            <summary>
+            Controller for all endpoints related with travel and cost simulation
+            </summary>
+        </member>
+        <member name="M:Exam.RouteApp.WebApi.Controllers.RouteController.GetPlanets">
+            <summary>
+            Returns all planets and their codes
+            </summary>
+            <returns>List of planets</returns>
+        </member>
+        <member name="M:Exam.RouteApp.WebApi.Controllers.RouteController.GetRoutes">
+            <summary>
+            Returns all possible Routes
+            </summary>
+            <returns> Returns all possible Routes</returns>
+        </member>
+        <member name="M:Exam.RouteApp.WebApi.Controllers.RouteController.GetPrice(System.String,System.String)">
+            <summary>
+            Returns a single routes price depending on base prices and taxes
+            </summary>
+            <param name="origin">origin planet code</param>
+            <param name="destination">destination planet code</param>
+            <returns>Returns a single routes price</returns>
+        </member>
+    </members>
+</doc>

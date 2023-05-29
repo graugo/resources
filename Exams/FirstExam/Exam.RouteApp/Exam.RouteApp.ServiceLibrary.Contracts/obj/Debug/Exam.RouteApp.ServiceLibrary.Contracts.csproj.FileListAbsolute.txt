@@ -1,0 +1,9 @@
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.ServiceLibrary.Contracts\bin\Debug\Exam.RouteApp.ServiceLibrary.Contracts.dll
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.ServiceLibrary.Contracts\bin\Debug\Exam.RouteApp.ServiceLibrary.Contracts.pdb
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.ServiceLibrary.Contracts\bin\Debug\Exam.RouteApp.Library.dll
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.ServiceLibrary.Contracts\bin\Debug\Exam.RouteApp.Library.pdb
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.ServiceLibrary.Contracts\obj\Debug\Exam.RouteApp.ServiceLibrary.Contracts.csproj.AssemblyReference.cache
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.ServiceLibrary.Contracts\obj\Debug\Exam.RouteApp.ServiceLibrary.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.ServiceLibrary.Contracts\obj\Debug\Exam.RouteApp.ServiceLibrary.Contracts.csproj.CopyComplete
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.ServiceLibrary.Contracts\obj\Debug\Exam.RouteApp.ServiceLibrary.Contracts.dll
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.ServiceLibrary.Contracts\obj\Debug\Exam.RouteApp.ServiceLibrary.Contracts.pdb

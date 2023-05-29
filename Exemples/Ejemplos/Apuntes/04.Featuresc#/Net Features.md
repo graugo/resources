@@ -1,0 +1,136 @@
+Net Features
+- Async
+    - https://docs.microsoft.com/en-us/dotnet/csharp/async
+    - Por asi decirlo es seguir escribiendo el código igual que seimpre y delegar en el compilador la gestion de las tareas ya que se devolvera la tarea que se esta ejecutando.
+    - Una manera facil de explicar el funcionamiento de async await es hacerse el desayuno.
+    - Primero listamos las tareas a realizar.
+        - Servir cafe
+        - Calentar una sarten, freir huevos
+        - Freir bacon
+        - Tostar pan
+        - Añadir mantequilla y mermelada
+        - Servir zumo
+    - Si nos fijamos estas tareas podemos hacerlas de manera simultanea.
+    - Si hiciermos todas las tareas de seguido tardariamos unos 30 min, es la suma de cada tarea.
+    - Como se puede ver en el codigo estas tareas son largas, lo que hace que el desayuno no sea comodo, si queremos que esto vaya mejor tendremos que hacerlo async.
+    - El sentido de la asincronia es la posibilidad de no bloquear la UI o una llamada, la idea es no bloquar hilos. Usar la via sync teniendo async puede tener un coste economico, 
+    ya que hace que las request tarden mas.
+    - Modificar codigo para añadir los awaits.
+    - Este codigo no bloquea mientras se cocinana los huevos o el bacon y so se inicia ninguna tarea. Con lo anterior podemos solucionar muchos problemas.
+    - Podemos hacer que este codigo sea mas asincrono, haciendo que las tareas se ejecuten de manera simultanea.
+    - Invocar el metodo sin await y llamarlo cuando necesitamos el objeto.
+    - Con eso podemos hacer que se reduzca el tiempo.
+    - Esto nos da la posibilidad de iniciar la tarea y no esperar el resultado hasta que lo necesitemos.
+    - Podemos extraer partes del codigo.
+    - Si una parte del codigo es async se considera todo async.
+    - En este caso async, no dice que dentro de nuestro metodo se utiliza un await.
+    - Si por lo que fuese una de las tareas fallara se almacenaria en el aggregateException, este es un comportamiento que tiene system. Hasta que no hicieras el await no se devolveria
+    el resultado.
+    - Se almacena allo ya que dentro de las tareas pueden darse varios errores.
+    - Esto intenta simular todo lo que se puede un proceso sync y asi facilitar la captura de estos.
+    - Podemos utilizar whenAll para esperar todas las tareas de manera simultanea.
+    - Podemos utilizar whenAny para solo esperar una de las tareas finalice.
+    - recuerda eliminar la tarea finalizada una vez que se haya completado.
+    - Con todo lo anterio hemos reducido el tiempo a la mitad.
+-- Hay 2 casos I/O-bound y CPU-bound.
+-- Async se puede utilizar en los 2 casos.
+-- Async utiliza Task<T> o Task.
+-- Async vuelve el metodo asincrono, lo que nos permite utilizar await dentro.
+-- Cuando await es utilizado, se pasa el task al principal y se espera por esta.
+-- Para poder identificar los 2 casos deberiamos hacernos 2 preguntas.
+    - Tu codigo necesita esperar por algo?
+        - Si! pues estamos ante un caso de I/O-bound.
+    - Tu codigo ejecuta un proceso costoso?
+        - Si! pues estamos ante un caso CPU-bound.
+-- I/O-bound, utiliza async-await sin Task.run.
+-- CPU-bound, utiliza async-await pero utilizamos Task.run para dividir el trabajo. Utilizamos task paralelas.
+-- Cuidado al utilizar async dentro de LINQ, ya que se usa una ejecucion aplazada y las llamadas no ocurririan inmediatamente como pasaria en el foreach.
+-- Los metodos con async pero sin await no aportan nada.
+-- Añadir async como sufijo para indicar que es async.
+-- Async void solo deberia usarse para event handlers.
+-- Async void no puede devolver errores.
+-- Async void son dificiles de testear.
+-- Async void pueden causar problemas en el "cliente" ya que espera que sea async.
+-- Escribir codigo para esperar la no para bloquearla.
+    | await -> correcto | Task.Run -> incorrecto | Resultado del proceso |
+    | await Task.WhenAny -> correcto | Task.WaitAny -> incorrecto | Esperar a que se acabe alguna tarea |
+    | await Task.WhenAll -> correcto | Task.WaitAll -> incorrecto | Esperar a que se acaben todas las tareas |
+    | await Task.Delay -> correcto | Task.Delay -> incorrecto | Esperar X |
+-- ConfigureAwait(false), utilizarlo masl puede generar errores.
+-- Escribir el minimo codigo con estado.
+-- No generar codigo que dependa de objetos globales, mejor del valor de retorno de los metodos.
+- Regex
+    - https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex?view=net-6.0
+    - https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference
+    - Son utilizadas para buscar fragmentos de texto dentro de string, tambien se pueden extraer, editar, reemplazar o eliminar partes del texto.
+    - Se puede añadir el texto extraido en una coleccion para generar un reporte.
+    - Para utilizar las regex tenemos que definir un patron que nos servira para identificar el texto.
+    - Podemos utilizar la clase estatica o podemos instanciarla.
+    - Utilizar los metodos que nos proporciona string cuando buscamos un string especifico, si buscamos un patron utilizar regex.
+    - instanciar un regex genera un objeto inmutable. Esto quiere decir que no se puede cambiar. Si lo generamos desde el static no creamos un objeto.
+    - Las regex utiliza una cache interna para no tener que recompilarse.
+    - Solo se pueden almacenar un maximo de 15 expresiones, si entra una nueva se sobrescribe la mas vieja.
+    - Se puede modificar esa propiedad para aumentar la cache.
+    - Cuando se instancia regex, la expresion se compila, esto puede causar problemas en un bucle.
+    -  Instaciar la expresion fuera del bucle.
+    - Podemos establecer un timeout para establecer el tiempo de un match.
+- Delegates
+    - https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/
+    - Es un tipo que representa la referencia a un metodo con una lista de paramatros en particular y un tipo de retorno.
+    - Cuando se instancia un delegado, puedes asociar la instancia con cualquier metodo compatible con su firma y retorno.
+    - Los delegados son utilizados para pasar los metodos como argumentos de otros metodos. 
+    - Como declara y utilizar un delegado
+        - Debemos utilizar la palabra reservada "delegate".
+        - La firma deberia de ser de este estilo, "delegate void Del(string str);".
+        - El metodo que utilicemos para usar el delegado tiene que tener una firma parecida y el mismo retorno.
+        - Por ejemplo, "static void Notify(string name){}"
+        - Para instanciar el delegado lo hariamos de esta manera, "Del del1=new Del(Notify);"
+        - Otra manera de hacerlo seria, "Del del2 = Notify;"
+        - Tambien podemos utilizar un tipo anonimo para generar nuestra instancia, "Del del3 = delegate(string name){};"
+        - Incluso podemos utilizar una expresion lambda, "Del del4 = name => {};"
+- Lambda
+    - https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions
+    - Para generar una lambda tenemos que utilizar su operador "=>".
+    - Utilizamos las lambdas para generar funciones anonimas.
+    - Lambda expresion -> (input) => expresion
+    - Lambda Statement -> (input) => {<codigo>}
+    - Para generar una expresion lambda hemos de especificar una entrada y al otro lado del operador una expresion o un bloque de codigo.
+    - Las lambdas se pueden convertir en delegates.
+    - En el caso que la lambda no devuelva valor se puede utilizar el tipo Action, si se quiere devolver valor se puede utilizar el tipo Func.
+    - En caso de utilizar Action<T1, T2>, los tipos de valor de entrada vienen dados por los T representados.
+    - Func<T, TResult>, como se puede ver el primer T define el tipo del input y el TResult define el tipo del resultado.  
+- LINQ
+    - https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries
+    - Language-Integrated Query
+    - Construccion de Linq, colección y hacer una busqueda dentro de ella
+    - Para que los resultados de las queries sean efectivos hay que utilizarlos.
+    - Otra opcion es invocar a ToList o ToArray.
+    - https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/basic-linq-query-operations
+    - Las linq pueden tener una sintaxis parecida a un metodo, utilizan lambda para facilitar la escritura de codigo
+- Generic Types
+    - https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics
+    - Nos permiten construir codigo que no depende del tipo
+    - Lo que nos permite reutilizar el codigo sin tener en cuenta el tipo.
+    - Podemos ver un ejemplo claro en las colecciones genericas.
+    - Se puede definir en la clase, en los metodos o en los parametros.
+    - En el caso de los parametros estara vinculado con lo que marque la clase.
+    - en el caso de los metodos tenemos que marcarlo cuando se invoca.
+    - la informacion del tipo se obtiene en run time mediante reflexion.
+- Exceptions treatment and handling
+    - https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/
+    - uso del bloque Try-catch
+    - uso de finally si necesitamos realizar acciones despues del bloque, utilizarlo para liberar memoria o cerrar conexiones.
+    - se puede propagar una excepcion utilizando throw
+    - podemos construir excepciones custom.
+    - para ello hemos de crear una clase que herede de Exception.
+    - podemos introducirla dentro de un bloque try para capturarla
+    - podemos añadir tantos catch como necesitemos para especificar diferentes salidas segun el error
+    - el ultimo a de ser el mas generico y el primero el mas especifico
+    - dentro del catch podemos hacer el logging y despues propagar la excepcion
+    - podemos modificar la excepcion propagada por el catch
+    - podemos añadir un condicional para capturar excepciones que no queremos propagar
+    - asociamos un metodo que realizara las acciones necesarias
+    - no utilizar las excepciones para cambiar el flujo del programa, solo para reportar errores
+    - las excepciones se han de reportar con throw nunca en un return
+    - no lanzar excepciones genericas desde el codigo
+    - no crear excepciones que se lancen en debug pero no en release

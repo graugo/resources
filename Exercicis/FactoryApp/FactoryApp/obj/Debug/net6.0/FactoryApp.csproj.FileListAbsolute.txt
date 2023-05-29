@@ -1,0 +1,15 @@
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\bin\Debug\net6.0\FactoryApp.exe
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\bin\Debug\net6.0\FactoryApp.deps.json
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\bin\Debug\net6.0\FactoryApp.runtimeconfig.json
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\bin\Debug\net6.0\FactoryApp.dll
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\bin\Debug\net6.0\FactoryApp.pdb
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\obj\Debug\net6.0\FactoryApp.csproj.AssemblyReference.cache
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\obj\Debug\net6.0\FactoryApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\obj\Debug\net6.0\FactoryApp.AssemblyInfoInputs.cache
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\obj\Debug\net6.0\FactoryApp.AssemblyInfo.cs
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\obj\Debug\net6.0\FactoryApp.csproj.CoreCompileInputs.cache
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\obj\Debug\net6.0\FactoryApp.dll
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\obj\Debug\net6.0\refint\FactoryApp.dll
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\obj\Debug\net6.0\FactoryApp.pdb
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\obj\Debug\net6.0\FactoryApp.genruntimeconfig.cache
+C:\Users\Jordi\source\repos\Exercicis\FactoryApp\FactoryApp\obj\Debug\net6.0\ref\FactoryApp.dll

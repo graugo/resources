@@ -1,0 +1,19 @@
+WebServer
+- IIS
+    - https://docs.microsoft.com/en-us/iis/get-started/introduction-to-iis/introduction-to-iis-architecture
+    - Internet Information Services, es un webServer que nos permite el procesado de request para nuestras aplicaciones web
+    - WAS -> Windows Process Activation Service nos permite habilitar en nuestros servicios http y https
+    - Podemos añadir o eliminar modulos propios
+    - https://docs.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview
+    - con IIS podemos controlar los componentes activos en el servidor sin afectar al funcionamiento de nuestra aplicacion
+    - Esto tambien mejora el uso de memoria del codigo.
+    - Podemos construir servidores especificos para el suo de nuestra aplicacion
+    - Lo anterior se refiere a la habilidad de IIS de trabajar con componentes.
+    - IIS se puede extender, lo que nos da la opcion a implementar nuestros propias funcionalidades
+    - Facilita la experiencia al desarrollar, tiene una buena integracion con VS
+    - integracion con ASPNET nos permite trabajar de una manera familiar con las aplicaciones
+    - La integracion con ASPNET tambien nos permite tener funcionalidades propias.
+- Kestrel
+    - https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-6.0
+    - Es el web server cross-platform para ASP.NET Core, esta incluido y habilitado por defecto.
+    - en el template de NET6 directamente se utiliza kestrel, esto se puede ver en el program.cs

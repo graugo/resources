@@ -1,0 +1,15 @@
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\bin\Debug\net6.0\StrategiesApp.exe
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\bin\Debug\net6.0\StrategiesApp.deps.json
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\bin\Debug\net6.0\StrategiesApp.runtimeconfig.json
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\bin\Debug\net6.0\StrategiesApp.dll
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\bin\Debug\net6.0\StrategiesApp.pdb
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\obj\Debug\net6.0\StrategiesApp.csproj.AssemblyReference.cache
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\obj\Debug\net6.0\StrategiesApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\obj\Debug\net6.0\StrategiesApp.AssemblyInfoInputs.cache
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\obj\Debug\net6.0\StrategiesApp.AssemblyInfo.cs
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\obj\Debug\net6.0\StrategiesApp.csproj.CoreCompileInputs.cache
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\obj\Debug\net6.0\StrategiesApp.dll
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\obj\Debug\net6.0\refint\StrategiesApp.dll
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\obj\Debug\net6.0\StrategiesApp.pdb
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\obj\Debug\net6.0\StrategiesApp.genruntimeconfig.cache
+C:\Users\Jordi\source\repos\Exemples\StrategiesApp\StrategiesApp\obj\Debug\net6.0\ref\StrategiesApp.dll

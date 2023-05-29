@@ -1,0 +1,203 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Iimpl.UnitTest\\Exam.RouteApp.ServiceLibrary.Iimpl.UnitTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Contracts\\Exam.RouteApp.Infrastructure.Contracts.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Contracts\\Exam.RouteApp.Infrastructure.Contracts.csproj",
+        "projectName": "Exam.RouteApp.Infrastructure.Contracts",
+        "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Contracts\\Exam.RouteApp.Infrastructure.Contracts.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Library\\Exam.RouteApp.Library.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Library\\Exam.RouteApp.Library.csproj"
+              },
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Contracts\\Exam.RouteApp.ServiceLibrary.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Contracts\\Exam.RouteApp.ServiceLibrary.Contracts.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Impl\\Exam.RouteApp.Infrastructure.Impl.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Impl\\Exam.RouteApp.Infrastructure.Impl.csproj",
+        "projectName": "Exam.RouteApp.Infrastructure.Impl",
+        "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Impl\\Exam.RouteApp.Infrastructure.Impl.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Contracts\\Exam.RouteApp.Infrastructure.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Contracts\\Exam.RouteApp.Infrastructure.Contracts.csproj"
+              },
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Library\\Exam.RouteApp.Library.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Library\\Exam.RouteApp.Library.csproj"
+              },
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Contracts\\Exam.RouteApp.ServiceLibrary.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Contracts\\Exam.RouteApp.ServiceLibrary.Contracts.csproj"
+              },
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Impl\\Exam.RouteApp.ServiceLibrary.Impl.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Impl\\Exam.RouteApp.ServiceLibrary.Impl.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Library\\Exam.RouteApp.Library.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Library\\Exam.RouteApp.Library.csproj",
+        "projectName": "Exam.RouteApp.Library",
+        "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Library\\Exam.RouteApp.Library.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Contracts\\Exam.RouteApp.ServiceLibrary.Contracts.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Contracts\\Exam.RouteApp.ServiceLibrary.Contracts.csproj",
+        "projectName": "Exam.RouteApp.ServiceLibrary.Contracts",
+        "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Contracts\\Exam.RouteApp.ServiceLibrary.Contracts.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Library\\Exam.RouteApp.Library.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Library\\Exam.RouteApp.Library.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Iimpl.UnitTest\\Exam.RouteApp.ServiceLibrary.Iimpl.UnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Iimpl.UnitTest\\Exam.RouteApp.ServiceLibrary.Iimpl.UnitTest.csproj",
+        "projectName": "Exam.RouteApp.ServiceLibrary.Iimpl.UnitTest",
+        "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Iimpl.UnitTest\\Exam.RouteApp.ServiceLibrary.Iimpl.UnitTest.csproj",
+        "packagesPath": "C:\\Users\\Jordi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Iimpl.UnitTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jordi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Contracts\\Exam.RouteApp.Infrastructure.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Contracts\\Exam.RouteApp.Infrastructure.Contracts.csproj"
+              },
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Impl\\Exam.RouteApp.Infrastructure.Impl.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Impl\\Exam.RouteApp.Infrastructure.Impl.csproj"
+              },
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Library\\Exam.RouteApp.Library.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Library\\Exam.RouteApp.Library.csproj"
+              },
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Contracts\\Exam.RouteApp.ServiceLibrary.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Contracts\\Exam.RouteApp.ServiceLibrary.Contracts.csproj"
+              },
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Impl\\Exam.RouteApp.ServiceLibrary.Impl.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Impl\\Exam.RouteApp.ServiceLibrary.Impl.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.2, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Impl\\Exam.RouteApp.ServiceLibrary.Impl.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Impl\\Exam.RouteApp.ServiceLibrary.Impl.csproj",
+        "projectName": "Exam.RouteApp.ServiceLibrary.Impl",
+        "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Impl\\Exam.RouteApp.ServiceLibrary.Impl.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Contracts\\Exam.RouteApp.Infrastructure.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Infrastructure.Contracts\\Exam.RouteApp.Infrastructure.Contracts.csproj"
+              },
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Library\\Exam.RouteApp.Library.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.Library\\Exam.RouteApp.Library.csproj"
+              },
+              "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Contracts\\Exam.RouteApp.ServiceLibrary.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Jordi\\source\\repos\\Exams\\FirstExam\\Jordi_Grau\\Exam.RouteApp\\Exam.RouteApp.ServiceLibrary.Contracts\\Exam.RouteApp.ServiceLibrary.Contracts.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

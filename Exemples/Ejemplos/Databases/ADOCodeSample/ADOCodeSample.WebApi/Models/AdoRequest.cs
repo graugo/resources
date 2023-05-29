@@ -1,0 +1,9 @@
+﻿namespace ADOCodeSample.WebApi.Models
+{
+    public class AdoRequest
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
+}

@@ -1,0 +1,44 @@
+WCF
+- https://docs.microsoft.com/en-us/dotnet/framework/wcf/whats-wcf
+- WCF Concepts
+    - Windows Comunication Foundation
+    - Es un framework que nos permite construit aplicaciones orientadas a servicio.
+    - Nos permite enviar datos desde un endpoint a otro.
+    - Que nos proporciona
+        - orientacion a servicio
+            - Nos facilita el SOA, ya nos permite construir servicios poco acoplados. Esto nos permite que cualquier servicio puede conectarse conociendo el contrato.
+        - Interoperabilidad
+            - Nos permite conectarnos con multiples tipos de protocolos, consultar documentación
+        - Multiple Message patterns
+            - Se puede configurar como request/reply, oneway o duplex.
+                - Request/Reply -> Dada una request respondemos unos datos
+                - OneWay -> Somos llamados y no se espera respuesta.
+                - Se puede llamar multiples endpoints que responden a una misma request.
+        - Metadata de servicio
+            - Se expone metadata del servicio que permite configurar la accesibilidad de los clientes, wsdl.
+            - Se puede exponer en http, https o web service metadata exchange standard.
+        - Data contract
+            - Nos da la posibilidad de convertir nuestros objetos directamente en metadatos de manera comoda usando Data contracts.
+        - Seguridad
+            - Podemos especificar niveles de seguridad y los mensajes pueden estar encriptados.
+        - Transportes multiples y codificado
+            - Se puede utilizar SOAP que nos permite ir por Http o TCP para comunicarnos con MSMQ.
+        - REST y AJAX
+            - Se puede configurar para utilizar texto plano XML o JSON.
+    - Conceptos
+        - Binding
+            - Define como un endpoint se comunica con el mundo (http o tcp).
+        - Binding elements
+            - Define el tipo de transporte utilizado.
+        - Behavior
+            - Define sobretodo comportamiento en run time de un endpoint o proceso en particular.
+        - Binding de sistema
+            - Define la interoperabilidad con los servicios, nos ahorran tiempo de configurar a mano el binding.
+- Server side usage
+    - Revisar código del proyecto FirstWCF
+- Client side usage
+    - Montar aplicación de consola u otra api que llame al WCF.
+    - Establecer una referencia de servicio.
+    - Configurar la conexion del Channel.
+- Debug Tools
+    - Revisar los clientes que se pueden utilizar.

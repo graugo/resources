@@ -1,0 +1,32 @@
+Testing
+- Veremos 2 tipos de testing: Unit Testing e Integration Testing
+- Unit Testing
+    - Se encarga de testear nuestro codigo en unidades
+    - Cada metodo se puede considerar una unidad de nuestro codigo
+    - Por norma general tan solo se testean los metodos publicos de nuestros servicios, clases
+    - Con el Test queremos controlar el comportamiento del codigo ante las posibles entradas que podamos tener
+    - Implementacion de unit Test con MSTest
+        - Hemos de generar un proyecto de Test con MSTest incluido.
+        - Cuando lo generemos nos aparecera uan clase predefinida, la podemos eliminar, pero antes de eso nos fijaremos en los atributos de la clase y metodo
+        - [TestClass] nos indica que la clase actual sera para realizar testing
+        - [TestMethod] nos indica que es un metodo de test
+        - Tenemos mas atributos que nos indican otras funciones que podemos asumir dentro de nuestro test
+        - Para generar nuestro cuerpo del test tendremos que generar un sut, subject under test.
+        - invocar el metodo a testear.
+        - Generar un Assert para comparar el resultado esperado con el que nos da.
+        -- Añadir Mocks
+        - Ahora pasaremos a añadir los mocks necesarios
+        - Primero hemos de instalar NMock3 desde los nugets
+        - Lo siguiente es declara los Mocks
+    - Implementacion de unit Test con Xunit
+        - Necesitamos un proyecto en NetCore
+- Integration Testing
+    - En este tipo de test el objetivo es testear la integración con terceros
+    - Suelen estar presentes en la capa de Infraestructura, ya que es la que tiene las conexiones a terceros
+    - En este caso no es necesario realizar Mocks
+    - Importante recordar que lo que se pretende es testear el comportamiento de nuestro codigo ante fallos de terceros
+    - Implementacion de Integration Test
+        - Es identico al proceso de Unit Test
+        - La parte que varia es la creacion de los mocks
+        - Utilizamos Autofac o bien creamos las instancias necesarias a nuestros servicios
+        - El codigo a de simular una ejecucion real, ya que nosotros no conocemos todos los comportamientos externos

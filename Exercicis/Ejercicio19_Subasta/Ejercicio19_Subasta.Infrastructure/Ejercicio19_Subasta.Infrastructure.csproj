@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Callers\" />
+    <Compile Remove="Migration\**" />
+    <EmbeddedResource Remove="Migration\**" />
+    <Folder Include="Migrations\" />
+    <None Remove="Migration\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <ProjectReference Include="..\Ejercicio19_Subasta.Application\Ejercicio19_Subasta.Application.csproj" />
+    <ProjectReference Include="..\Ejercicio19_Subasta.CrossCutting\Ejercicio19_Subasta.CrossCutting.csproj" />
+    <ProjectReference Include="..\Ejercicio19_Subasta.Domain\Ejercicio19_Subasta.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

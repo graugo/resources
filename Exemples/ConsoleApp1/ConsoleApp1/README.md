@@ -1,0 +1,1 @@
+Crear una calculadora basica utilitzant el 4 conceptes principals de la programacio orientada a objectes

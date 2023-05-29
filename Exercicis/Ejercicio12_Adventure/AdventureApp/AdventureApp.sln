@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Presentation", "01.Presentation", "{E32A05E0-501D-47DC-8240-E7E6E87ADB8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Domain", "02.Domain", "{184B8168-EDB5-4D4F-8715-3C04C7A4C0C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Infrastructure", "03.Infrastructure", "{87444259-7D05-4BB0-A554-45AADF87F234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureApp.Library", "AdventureApp.Library\AdventureApp.Library.csproj", "{975656D2-84C4-4EF5-A4C3-FC7B72C6FED8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureApp.ServiceLibrary.Contracts", "AdventureApp.ServiceLibrary.Contracts\AdventureApp.ServiceLibrary.Contracts.csproj", "{BEFC0160-919D-4C16-9C85-C3857F16C0FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureApp.ServiceLibrary.Impl", "AdventureApp.ServiceLibrary.Impl\AdventureApp.ServiceLibrary.Impl.csproj", "{BA2829E1-430E-4B6A-B0C8-4AE436A845CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureApp.Infrastructure.Contracts", "AdventureApp.Infrastructure.Contracts\AdventureApp.Infrastructure.Contracts.csproj", "{AB8294B6-487D-4B35-8700-72ABF2E793D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureApp.Infrastructure.Impl", "AdventureApp.Infrastructure.Impl\AdventureApp.Infrastructure.Impl.csproj", "{25D0DA79-FBEB-4A8E-B69A-A38E164B7BFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureApp.WebApi", "AdventureApp.WebApi\AdventureApp.WebApi.csproj", "{8DABFF3E-83C2-4032-A5DB-CD64C78B6B26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{AE13F8CF-E580-4C12-9D20-813A9C3F2092}"
+	ProjectSection(SolutionItems) = preProject
+		character.json = character.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Test", "04.Test", "{29AB3F51-D350-48AB-9AC9-763E0BE01437}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureApp.ServiceLibrary.Impl.UnitTest", "AdventureApp.ServiceLibrary.Impl.UnitTest\AdventureApp.ServiceLibrary.Impl.UnitTest.csproj", "{6BB63EBE-364A-4B5E-AEFA-C912E65B83BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{975656D2-84C4-4EF5-A4C3-FC7B72C6FED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975656D2-84C4-4EF5-A4C3-FC7B72C6FED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975656D2-84C4-4EF5-A4C3-FC7B72C6FED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975656D2-84C4-4EF5-A4C3-FC7B72C6FED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEFC0160-919D-4C16-9C85-C3857F16C0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEFC0160-919D-4C16-9C85-C3857F16C0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEFC0160-919D-4C16-9C85-C3857F16C0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEFC0160-919D-4C16-9C85-C3857F16C0FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2829E1-430E-4B6A-B0C8-4AE436A845CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2829E1-430E-4B6A-B0C8-4AE436A845CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2829E1-430E-4B6A-B0C8-4AE436A845CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2829E1-430E-4B6A-B0C8-4AE436A845CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB8294B6-487D-4B35-8700-72ABF2E793D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB8294B6-487D-4B35-8700-72ABF2E793D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB8294B6-487D-4B35-8700-72ABF2E793D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB8294B6-487D-4B35-8700-72ABF2E793D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25D0DA79-FBEB-4A8E-B69A-A38E164B7BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25D0DA79-FBEB-4A8E-B69A-A38E164B7BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25D0DA79-FBEB-4A8E-B69A-A38E164B7BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25D0DA79-FBEB-4A8E-B69A-A38E164B7BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DABFF3E-83C2-4032-A5DB-CD64C78B6B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DABFF3E-83C2-4032-A5DB-CD64C78B6B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DABFF3E-83C2-4032-A5DB-CD64C78B6B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DABFF3E-83C2-4032-A5DB-CD64C78B6B26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BB63EBE-364A-4B5E-AEFA-C912E65B83BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB63EBE-364A-4B5E-AEFA-C912E65B83BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB63EBE-364A-4B5E-AEFA-C912E65B83BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB63EBE-364A-4B5E-AEFA-C912E65B83BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{975656D2-84C4-4EF5-A4C3-FC7B72C6FED8} = {184B8168-EDB5-4D4F-8715-3C04C7A4C0C7}
+		{BEFC0160-919D-4C16-9C85-C3857F16C0FA} = {184B8168-EDB5-4D4F-8715-3C04C7A4C0C7}
+		{BA2829E1-430E-4B6A-B0C8-4AE436A845CA} = {184B8168-EDB5-4D4F-8715-3C04C7A4C0C7}
+		{AB8294B6-487D-4B35-8700-72ABF2E793D9} = {184B8168-EDB5-4D4F-8715-3C04C7A4C0C7}
+		{25D0DA79-FBEB-4A8E-B69A-A38E164B7BFD} = {87444259-7D05-4BB0-A554-45AADF87F234}
+		{8DABFF3E-83C2-4032-A5DB-CD64C78B6B26} = {E32A05E0-501D-47DC-8240-E7E6E87ADB8D}
+		{6BB63EBE-364A-4B5E-AEFA-C912E65B83BE} = {29AB3F51-D350-48AB-9AC9-763E0BE01437}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D559D78-B083-4B2E-B7E9-15477D6FCFF6}
+	EndGlobalSection
+EndGlobal

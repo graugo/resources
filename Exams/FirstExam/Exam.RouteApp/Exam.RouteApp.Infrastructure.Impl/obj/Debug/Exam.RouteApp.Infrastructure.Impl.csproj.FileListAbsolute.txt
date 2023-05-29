@@ -1,0 +1,15 @@
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\bin\Debug\Exam.RouteApp.Infrastructure.Impl.dll
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\bin\Debug\Exam.RouteApp.Infrastructure.Impl.pdb
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\bin\Debug\Exam.RouteApp.Infrastructure.Contracts.dll
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\bin\Debug\Exam.RouteApp.Library.dll
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\bin\Debug\Exam.RouteApp.ServiceLibrary.Contracts.dll
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\bin\Debug\Exam.RouteApp.ServiceLibrary.Impl.dll
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\bin\Debug\Exam.RouteApp.Infrastructure.Contracts.pdb
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\bin\Debug\Exam.RouteApp.Library.pdb
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\bin\Debug\Exam.RouteApp.ServiceLibrary.Contracts.pdb
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\bin\Debug\Exam.RouteApp.ServiceLibrary.Impl.pdb
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\obj\Debug\Exam.RouteApp.Infrastructure.Impl.csproj.AssemblyReference.cache
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\obj\Debug\Exam.RouteApp.Infrastructure.Impl.csproj.CoreCompileInputs.cache
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\obj\Debug\Exam.RouteApp.Infrastructure.Impl.csproj.CopyComplete
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\obj\Debug\Exam.RouteApp.Infrastructure.Impl.dll
+C:\Users\Jordi\source\repos\Exams\FirstExam\Exam.RouteApp\Exam.RouteApp.Infrastructure.Impl\obj\Debug\Exam.RouteApp.Infrastructure.Impl.pdb

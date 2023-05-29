@@ -1,0 +1,15 @@
+C:\Users\Jordi\source\repos\IS\IS\bin\Debug\net6.0\IS.exe
+C:\Users\Jordi\source\repos\IS\IS\bin\Debug\net6.0\IS.deps.json
+C:\Users\Jordi\source\repos\IS\IS\bin\Debug\net6.0\IS.runtimeconfig.json
+C:\Users\Jordi\source\repos\IS\IS\bin\Debug\net6.0\IS.dll
+C:\Users\Jordi\source\repos\IS\IS\bin\Debug\net6.0\IS.pdb
+C:\Users\Jordi\source\repos\IS\IS\obj\Debug\net6.0\IS.csproj.AssemblyReference.cache
+C:\Users\Jordi\source\repos\IS\IS\obj\Debug\net6.0\IS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jordi\source\repos\IS\IS\obj\Debug\net6.0\IS.AssemblyInfoInputs.cache
+C:\Users\Jordi\source\repos\IS\IS\obj\Debug\net6.0\IS.AssemblyInfo.cs
+C:\Users\Jordi\source\repos\IS\IS\obj\Debug\net6.0\IS.csproj.CoreCompileInputs.cache
+C:\Users\Jordi\source\repos\IS\IS\obj\Debug\net6.0\IS.dll
+C:\Users\Jordi\source\repos\IS\IS\obj\Debug\net6.0\refint\IS.dll
+C:\Users\Jordi\source\repos\IS\IS\obj\Debug\net6.0\IS.pdb
+C:\Users\Jordi\source\repos\IS\IS\obj\Debug\net6.0\IS.genruntimeconfig.cache
+C:\Users\Jordi\source\repos\IS\IS\obj\Debug\net6.0\ref\IS.dll
